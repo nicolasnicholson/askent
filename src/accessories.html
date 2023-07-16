@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASKENT · Accessories</title>
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+</head>
+<body>
+  <div class="mx-12 my-9">
+    <!-- Header -->
+    <header class="pb-5 flex justify-between items-center border-b-[1px] border-black">
+      <!-- Navigation Button -->
+      <button id="show-nav" class="min-[550px]:hidden">
+        <i class="bi bi-list-nested"></i>
+      </button>
+      <!-- Logo -->
+      <a href="./index.html">
+        <img src="../assets/img/logo.svg" alt="Logo" />
+      </a>
+      <!-- Navigation Menu -->
+      <nav id="navbar" class="max-[550px]:absolute max-[550px]:top-0 max-[550px]:left-0 max-[550px]:bottom-0 max-[550px]:shadow-md max-[550px]:z-10 max-[550px]:bg-white max-[550px]:p-8 max-[550px]:hidden">
+        <button id="close-nav" class="min-[550px]:hidden">
+          <i class="bi bi-x-lg text-xl"></i>
+        </button>
+        <ul class="flex gap-5 [&>li>a]:font-semibold [&>li>a]:uppercase [&>li>a]:text-sm max-[550px]:flex-col max-[550px]:align">
+          <li><a class="hover:underline" href="./index.html">Home</a></li>
+          <li><a class="hover:underline" href="./men.html">Men</a></li>
+          <li><a class="hover:underline" href="./women.html">Women</a></li>
+          <li><a class="hover:underline" href="./accessories.html">Accessories</a></li>
+        </ul>
+      </nav>
+      <!-- Language and Cart Icons -->
+      <div class="flex gap-3 justify-center items-center [&>i]:text-xl">
+        <!-- Language Dropdown -->
+        <div class="relative inline-block z-10">
+          <div tabindex="0" class="bg-white cursor-pointer flex items-center justify-between" id="dropdown-toggle">
+            <i class="bi bi-geo-alt text-xl"></i>
+          </div>
+          <div class="absolute w-40 top-18 right-5 p-5 bg-white rounded-lg shadow-lg z-10 hidden" id="dropdown-menu">
+            <div id="badges" class="py-1 [&>div]:cursor-pointer [&>div]:p-2">
+              <div class="hover:bg-black hover:text-white">
+                <p id="usd" class="font-semibold">
+                  <span class="fi fi-us"></span>
+                  USD
+                </p>
+              </div>
+              <div class="hover:bg-black hover:text-white">
+                <p id="eur" class="font-semibold">
+                  <span class="fi fi-es"></span>
+                  EUR
+                </p>
+              </div>
+              <div class="hover:bg-black hover:text-white">
+                <p id="ars" class="font-semibold">
+                  <span class="fi fi-ar"></span>
+                  ARS
+                </p>
+              </div>
+              <div class="hover:bg-black hover:text-white">
+                <p id="gbp" class="font-semibold">
+                  <span class="fi fi-gb"></span>
+                  GBP
+                </p>
+              </div>
+              <div class="hover:bg-black hover:text-white">
+                <p id="jpy" class="font-semibold">
+                  <span class="fi fi-jp"></span>
+                  JPY
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Shopping Cart -->
+        <div class="relative">
+          <button id="bagButton">
+            <i class="bi bi-bag text-xl"></i>
+          </button>
+          <span id="cart-amount" class="absolute -top-3 -right-4 bg-black rounded-full w-5 h-5 text-white font-semibold flex justify-center items-center text-xs">0</span>
+        </div>
+        <!-- Cart Menu -->
+        <div id="cart-menu" class="absolute top-24 right-12 p-5 bg-white rounded-lg shadow-lg z-10 hidden">
+          <h2 class="text-3xl font-bold mb-4">Products in your cart</h2>
+          <ul id="cart-items" class="mb-4"></ul>
+          <div class="flex justify-between items-center [&>p]:text-lg [&>p]:uppercase [&>p]:font-bold">
+            <p class="text-lg">Subtotal:</p>
+            <p id="cart-total">$0</p>
+          </div>
+          <div class="flex flex-col items-start gap-3 mt-3">
+            <button id="buy-button" class="py-2 px-4 bg-black text-white uppercase">Proceed to checkout</button>
+            <button id="clear-button" class="text-red-400 font-bold">Clear Cart</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="mt-5 flex flex-col gap-5">
+      <p class="font-semibold text-sm">
+        Homepage / <span id="section" class="text-[#B4B4B4]"></span>
+      </p>
+      <h2 id="title-section" class="font-bold text-5xl"></h2>
+
+      <!-- Filter and Sort Buttons -->
+      <div class="flex justify-between items-center">
+        <button id="filters-btn" class="text-left">
+          <p id="filters-text" class="relative uppercase font-semibold text-xs">
+            Filters <i class="bi bi-arrow-bar-down"></i>
+          </p>
+        </button>
+        <button id="sortby-btn" class="text-left">
+          <p id="sortby-text" class="relative uppercase font-semibold text-xs">
+            Sort by <i class="bi bi-arrow-bar-down"></i>
+          </p>
+        </button>
+      </div>
+
+      <!-- Filters Dropdown -->
+      <div class="absolute top-64 p-3 flex flex-col gap-6 max-w-xs shadow-md z-10 bg-white invisible" id="filters">
+        <div>
+          <h4 class="font-bold text-xl mb-3">Categories</h4>
+          <form class="flex flex-col gap-2 text-base">
+            <div>
+              <input type="checkbox" id="bags" value="men-acc" class="check-filter accent-black" />
+              <label for="bags">Men</label>
+            </div>
+            <div>
+              <input type="checkbox" id="wallets" value="women-acc" class="check-filter accent-black" />
+              <label for="wallets">Women</label>
+            </div>
+          </form>
+        </div>
+        <div>
+          <h4 class="font-bold text-xl mb-3">Filter By Price</h4>
+          <div class="flex gap-2 items-center">
+            <span>0</span>
+            <input type="range" id="input-range" min="0" max="500" value="500" class="accent-black" />
+            <span id="input-range-value">500</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sort By Dropdown -->
+      <div class="absolute top-64 right-12 p-3 flex flex-col gap-6 max-w-xs shadow-md z-10 bg-white invisible" id="sortby">
+        <div>
+          <h4 class="font-bold text-xl mb-3">Sort By Price</h4>
+          <form class="flex flex-col gap-2 text-base">
+            <div>
+              <input type="radio" id="lowest" name="sortbyprice" value="lowest" class="accent-black" />
+              <label for="lowest">Lowest First</label>
+            </div>
+            <div>
+              <input type="radio" id="highest" name="sortbyprice" value="highest" class="accent-black" />
+              <label for="highest">Highest First</label>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="products" class="grid grid-cols-4 gap-5 max-[600px]:grid-cols-2">
+        <!-- Lógica JS -->
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#F8F3F3] mt-5 p-14 flex gap-32 justify-between">
+    <!-- Service and Support -->
+    <div class="flex gap-52">
+      <div>
+        <h3 class="font-bold uppercase mb-5 text-xs">Service and support</h3>
+        <ul class="[&>li>a]:text-sm">
+          <li><a href="#">Shipping and payment</a></li>
+          <li><a href="#">Public offer</a></li>
+          <li><a href="#">Warranty and Care</a></li>
+          <li><a href="#">Loyalty system</a></li>
+          <li><a href="#">Gift cards</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold uppercase mb-5 text-xs">About company</h3>
+        <ul class="[&>li>a]:text-sm">
+          <li><a href="#">The shops</a></li>
+          <li><a href="#">Press about us</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- News and Promotions -->
+    <div class="flex flex-col gap-5">
+      <h3 class="font-bold uppercase mb-5 text-xs">News and promotions</h3>
+      <form class="flex flex-col gap-5">
+        <div class="flex justify-center items-center gap-1">
+          <input class="p-1 w-64 h-10 bg-transparent border border-black focus:outline-none focus:border-black" type="text" name="email" />
+          <button class="px-2 h-10 border border-black">Subscribe</button>
+        </div>
+
+        <div class="flex gap-1 items-center">
+          <input class="accent-[#AA8E5E] bg-red-400" type="checkbox" name="caca" />
+          <label class="text-xs" for="caca">I agree to the processing of personal data <span class="underline">Read more</span></label>
+        </div>
+      </form>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Circle";
+    src: url("./fonts/Circe-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Circle-Bold";
+    src: url("./fonts/Circe-Bold.woff2");
+}

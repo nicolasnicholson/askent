@@ -1,0 +1,402 @@
+[
+    {
+      "id": "men-bag-00",
+      "name": "Briefcase case with short handles",
+      "category": "men-bags",
+      "new": true,
+      "price": 255,
+      "section": "men"
+    },
+    {
+      "id": "men-bag-01",
+      "name": "Flat tablet bag",
+      "category": "men-bags",
+      "new": false,
+      "price": 130,
+      "section": "men"
+    },
+    {
+      "id": "men-bag-02",
+      "name": "Laptop bag",
+      "category": "men-bags",
+      "new": true,
+      "price": 180,
+      "section": "men"
+    },
+    {
+      "id": "men-bag-03",
+      "name": "Horizontal tote",
+      "category": "men-bags",
+      "new": false,
+      "price": 90,
+      "section": "men"
+    },
+    {
+      "id": "men-bag-04",
+      "name": "Shoulder bag",
+      "category": "men-bags",
+      "new": true,
+      "price": 210,
+      "section": "men"
+    },
+    {
+      "id": "men-bag-05",
+      "name": "Shoulder bag",
+      "category": "men-bags",
+      "new": false,
+      "price": 150,
+      "section": "men"
+    },
+    {
+      "id": "men-bag-06",
+      "name": "Zippered tablet bag",
+      "category": "men-bags",
+      "new": true,
+      "price": 280,
+      "section": "men"
+    },
+    {
+      "id": "men-bag-07",
+      "name": "Cluth purse",
+      "category": "men-bags",
+      "new": false,
+      "price": 170,
+      "section": "men"
+    },
+    {
+      "id": "men-bag-08",
+      "name": "Flat tablet bag",
+      "category": "men-bags",
+      "new": true,
+      "price": 220,
+      "section": "men"
+    },
+    {
+      "id": "men-bag-09",
+      "name": "Waist bag",
+      "category": "men-bags",
+      "new": false,
+      "price": 120,
+      "section": "men"
+    },
+    {
+      "id": "men-wallet-00",
+      "name": "Bussiness clutch with loop handle",
+      "category": "men-wallets",
+      "new": true,
+      "price": 70,
+      "section": "men"
+    },
+    {
+      "id": "men-wallet-01",
+      "name": "Mini wallet with outside pocket",
+      "category": "men-wallets",
+      "new": false,
+      "price": 40,
+      "section": "men"
+    },
+    {
+      "id": "men-wallet-02",
+      "name": "Purse on the button",
+      "category": "men-wallets",
+      "new": true,
+      "price": 90,
+      "section": "men"
+    },
+    {
+      "id": "men-wallet-03",
+      "name": "Wallet-clutch with loop handle",
+      "category": "men-wallets",
+      "new": false,
+      "price": 60,
+      "section": "men"
+    },
+    {
+      "id": "men-wallet-04",
+      "name": "Wallet compact",
+      "category": "men-wallets",
+      "new": true,
+      "price": 80,
+      "section": "men"
+    },
+    {
+      "id": "men-wallet-05",
+      "name": "Passport cover with leather pockets",
+      "category": "men-wallets",
+      "new": false,
+      "price": 110,
+      "section": "men"
+    },
+    {
+      "id": "men-wallet-06",
+      "name": "Mini credit lock",
+      "category": "men-wallets",
+      "new": true,
+      "price": 50,
+      "section": "men"
+    },
+    {
+      "id": "men-wallet-07",
+      "name": "Passport cover with card comparments",
+      "category": "men-wallets",
+      "new": false,
+      "price": 100,
+      "section": "men"
+    },
+    {
+      "id": "men-wallet-08",
+      "name": "Mini purse with strap",
+      "category": "men-wallets",
+      "new": true,
+      "price": 75,
+      "section": "men"
+    },
+    {
+      "id": "men-wallet-09",
+      "name": "Wallet-clutch with loop handle",
+      "category": "men-wallets",
+      "new": false,
+      "price": 55,
+      "section": "men"
+    },
+    {
+      "id": "women-bag-00",
+      "name": "Briefcase case with short handles",
+      "category": "women-bags",
+      "new": true,
+      "price": 255,
+      "section": "women"
+    },
+    {
+      "id": "women-bag-01",
+      "name": "Flat tablet bag",
+      "category": "women-bags",
+      "new": false,
+      "price": 130,
+      "section": "women"
+    },
+    {
+      "id": "women-bag-02",
+      "name": "Laptop bag",
+      "category": "women-bags",
+      "new": true,
+      "price": 180,
+      "section": "women"
+    },
+    {
+      "id": "women-bag-03",
+      "name": "Horizontal tote",
+      "category": "women-bags",
+      "new": false,
+      "price": 90,
+      "section": "women"
+    },
+    {
+      "id": "women-bag-04",
+      "name": "Shoulder bag",
+      "category": "women-bags",
+      "new": true,
+      "price": 210,
+      "section": "women"
+    },
+    {
+      "id": "women-bag-05",
+      "name": "Shoulder bag",
+      "category": "women-bags",
+      "new": false,
+      "price": 150,
+      "section": "women"
+    },
+    {
+      "id": "women-bag-06",
+      "name": "Zippered tablet bag",
+      "category": "women-bags",
+      "new": true,
+      "price": 280,
+      "section": "women"
+    },
+    {
+      "id": "women-bag-07",
+      "name": "Cluth purse",
+      "category": "women-bags",
+      "new": false,
+      "price": 170,
+      "section": "women"
+    },
+    {
+      "id": "women-bag-08",
+      "name": "Flat tablet bag",
+      "category": "women-bags",
+      "new": true,
+      "price": 220,
+      "section": "women"
+    },
+    {
+      "id": "women-bag-09",
+      "name": "Waist bag",
+      "category": "women-bags",
+      "new": false,
+      "price": 120,
+      "section": "women"
+    },
+    {
+      "id": "women-wallet-00",
+      "name": "Bussiness clutch with loop handle",
+      "category": "women-wallets",
+      "new": true,
+      "price": 70,
+      "section": "women"
+    },
+    {
+      "id": "women-wallet-01",
+      "name": "Mini wallet with outside pocket",
+      "category": "women-wallets",
+      "new": false,
+      "price": 40,
+      "section": "women"
+    },
+    {
+      "id": "women-wallet-02",
+      "name": "Purse on the button",
+      "category": "women-wallets",
+      "new": true,
+      "price": 90,
+      "section": "women"
+    },
+    {
+      "id": "women-wallet-03",
+      "name": "Wallet-clutch with loop handle",
+      "category": "women-wallets",
+      "new": false,
+      "price": 60,
+      "section": "women"
+    },
+    {
+      "id": "women-wallet-04",
+      "name": "Wallet compact",
+      "category": "women-wallets",
+      "new": true,
+      "price": 80,
+      "section": "women"
+    },
+    {
+      "id": "women-wallet-05",
+      "name": "Passport cover with leather pockets",
+      "category": "women-wallets",
+      "new": false,
+      "price": 110,
+      "section": "women"
+    },
+    {
+      "id": "women-wallet-06",
+      "name": "Mini credit lock",
+      "category": "women-wallets",
+      "new": true,
+      "price": 50,
+      "section": "women"
+    },
+    {
+      "id": "women-wallet-07",
+      "name": "Passport cover with card comparments",
+      "category": "women-wallets",
+      "new": false,
+      "price": 100,
+      "section": "women"
+    },
+    {
+      "id": "women-wallet-08",
+      "name": "Mini purse with strap",
+      "category": "women-wallets",
+      "new": true,
+      "price": 75,
+      "section": "women"
+    },
+    {
+      "id": "women-wallet-09",
+      "name": "Wallet-clutch with loop handle",
+      "category": "women-wallets",
+      "new": false,
+      "price": 55,
+      "section": "women"
+    },
+    {
+      "id": "accessories-00",
+      "name": "Glasses case",
+      "category": "women-acc",
+      "new": false,
+      "price": 65,
+      "section": "accessories"
+    },
+    {
+      "id": "accessories-01",
+      "name": "Glasses case",
+      "category": "women-acc",
+      "new": true,
+      "price": 75,
+      "section": "accessories"
+    },
+    {
+      "id": "accessories-02",
+      "name": "Glasses case",
+      "category": "women-acc",
+      "new": false,
+      "price": 85,
+      "section": "accessories"
+    },
+    {
+      "id": "accessories-03",
+      "name": "Key holder with carabiner ring",
+      "category": "women-acc",
+      "new": true,
+      "price": 95,
+      "section": "accessories"
+    },
+    {
+      "id": "accessories-04",
+      "name": "Key holder with carabiner ring",
+      "category": "women-acc",
+      "new": false,
+      "price": 155,
+      "section": "accessories"
+    },
+    {
+      "id": "accessories-05",
+      "name": "Key holder with carabiner",
+      "category": "men-acc",
+      "new": false,
+      "price": 15,
+      "section": "accessories"
+    },
+    {
+      "id": "accessories-06",
+      "name": "Rectangular key holder",
+      "category": "men-acc",
+      "new": true,
+      "price": 25,
+      "section": "accessories"
+    },
+    {
+      "id": "accessories-07",
+      "name": "Rectangular key holder",
+      "category": "men-acc",
+      "new": false,
+      "price": 35,
+      "section": "accessories"
+    },
+    {
+      "id": "accessories-08",
+      "name": "Key holder with buttons",
+      "category": "men-acc",
+      "new": true,
+      "price": 45,
+      "section": "accessories"
+    },
+    {
+      "id": "accessories-09",
+      "name": "Keychain with decorative stitching",
+      "category": "men-acc",
+      "new": false,
+      "price": 55,
+      "section": "accessories"
+    }
+  ]
